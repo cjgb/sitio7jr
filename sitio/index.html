@@ -140,7 +140,45 @@
 			<li>Evaluación de propuestas: del XX al XX</li>
 			<li>Confirmación de la aprobación de la propuesta: XX de XXX</li>
 		</ul>
+            
+                
+                
+        <!--
+                Incluyo una venta tipo modal y el fórmulario de google dentro
+        -->
+                
+        <p style="margin:50px;">
+            En el siguiente fórmulario puedes enviarnos tu propuesta:
+                
+                
+        <!-- Button trigger modal -->
+                
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#formu-propuesta">
+          Envía tu propuesta
+        </button>
+            
+        </p>            
 
+        <!-- Modal -->
+        <div class="modal fade" id="formu-propuesta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Fórmulario de propuestas</h4>
+              </div>
+              <div class="modal-body">
+                <iframe src="https://docs.google.com/forms/d/1IJyEUIP3i3aeVP79tLBwhL_8-P0HISAgIDRYrBUcqjc/viewform?embedded=true" width="550" height="500"
+                        frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>        
+                
+                
                 <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
