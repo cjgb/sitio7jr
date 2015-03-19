@@ -284,6 +284,7 @@
     <!-- Map Section -->
     <div id="map"></div>
 
+
     <!-- Footer -->
     <footer>
         <div class="container text-center">
@@ -299,9 +300,22 @@
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
+    
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    
+    <script>        
+        var map = L.map('map').setView([40.965444,-5.670472], 16);
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+        // add an OpenStreetMap tile layer
+        L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.jpg').addTo(map);
+
+        // add a marker in the given location, attach some popup content to it and open the popup
+        L.marker([40.965444,-5.670472]).addTo(map)
+            .bindPopup('VII Jornadas de Usuarios de R')
+            .openPopup();    
+    </script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
