@@ -129,7 +129,8 @@
                     <h3>La asistencia es gratuita.</h3>
                     <p>El espacio es limitado; no te registres si tienes serias dudas acerca de la posibilidad de que puedas asistir finalmente</p>
 
-			<a href="http://www.eventbrite.es/e/entradas-vii-jornadas-de-usuarios-de-r-16269024089?ref=ebtn" target="_blank"><img src="https://www.eventbrite.es/custombutton?eid=16269024089" alt="Eventbrite - VII Jornadas de Usuarios de R" /></a></br>
+			<a href="http://www.eventbrite.es/e/entradas-vii-jornadas-de-usuarios-de-r-16269024089?ref=ebtn" target="_blank"><img src="https://www.eventbrite.es/custombutton?eid=16269024089" alt="Eventbrite - VII Jornadas de Usuarios de R" /></a>
+			</br>
 
 
                     <div class="row">
@@ -332,7 +333,8 @@
         L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.jpg').addTo(map);
 
         // add a marker in the given location, attach some popup content to it and open the popup
-        L.marker([40.965444,-5.670472]).addTo(map)
+	// note that the street numbering is a bit odd: the actual entry is at the round part of the building (NE corner)
+        L.marker([40.965886, -5.669262]).addTo(map)
             .bindPopup('VII Jornadas de Usuarios de R')
             .openPopup();    
     </script>
