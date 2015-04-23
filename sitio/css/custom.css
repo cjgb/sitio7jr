@@ -3,6 +3,11 @@ body {
     background-color: #fff;
 }
 
+.black {
+    background-color: black;
+    color: white;
+}
+
 .col-md-6 h4 {
     border-bottom: 1px solid aquamarine;
     padding-bottom: 10px;
@@ -92,6 +97,27 @@ body {
     }
 
     #asiste {
-        padding-top: 100px;
+        padding-top: 150px;
+    }
+
+    #participa {
+        padding-bottom: 50px;
+    }
+
+    #organizacion {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+    .black {
+        margin-top: 100px;
+    }
+
+    #contacto {
+        padding-top: 200px;
+    }
+
+     #patrocinadores {
+        padding-top: 80px;
     }
 }
