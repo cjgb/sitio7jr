@@ -121,3 +121,16 @@ body {
         padding-top: 80px;
     }
 }
+
+
+
+footer {
+    padding: 10px 0;
+    background-color: black;    
+    color: white;
+}
+
+footer p {
+    margin: 10px;
+    font-size: 15px;
+}
