@@ -139,3 +139,19 @@ footer p {
     margin: 10px;
     font-size: 15px;
 }
+
+
+/* TABLA del Programa */
+
+.titulo, .titulo1{
+    font-weight: bold;
+}
+
+.titulo1{
+    color: #42dca3;
+    font-size: 30px;
+}
+
+td{
+    vertical-align: middle !important;
+}
